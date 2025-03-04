@@ -217,27 +217,6 @@ A Tabela abaixo apresenta os trabalhos selecionados para compor a presente revis
 |16|Accurate age classification using manual method and deep  convolutional neural network based on orthopantomogram images|   2021                |
 |17|Dental Age Estimation Based on X-ray Images | 2020                                            |  
 
-# Análise
-
-| Trabalho | Faixa-etária | Redes específicas | Transfer learning | Métricas de desempenho | Dados | Função de ativação | Base de Dados | Classificação/regressão |
-|----------|-------------|------------------|-------------------|-----------------------|-------|--------------------|---------------|------------------------|
-| 1 | 10, 10 a 15, 15 a 20, 21 a 25, 25 a 27, 27 a 29, 30+ | ResNet e Sequencial | NÃO | Acurácia, Perda, Erros | 80% treinamento e 20% teste | ReLu/ SoftMax | não | classificação |
-| 2 | 5,1 a 15,8 | Deep Convolutional Neural Network (DCNN) | NÃO | Precisão, Recall, F1-score, Mean Error (ME) | 80% treinamento e 20% teste | - | não | classificação |
-| 3 | 4 a 16 | EfficientNet | SIM | Recall, Precisão, F1-score | 80% treinamento e 20% validação | RELU | sim | classificação |
-| 4 | 2,25 a 96,50 | InceptionV4 (adaptada) | NÃO | MAE, MSE, Mediana do Erro Absoluto, IQR, R² | 80% treinamento, 10% validação, 10% holdout | RELU | sim | regressão |
-| 5 | 4 a 17 | AlexNet, VGG16, ResNet152, DenseNet201, InceptionV3, Xception, NASNetLarge, InceptionResNetV2, MobileNetV2 | SIM | MAE (Mean Absolute Error), R² | - | SoftMax | não | regressão |
-| 6 | 3 a 15 | SOS-Net (ResNext50) | NÃO | F1 Score, AUC, MAE | 70% treinamento, 10% validação, 20% teste | - | não | classificação/regressão |
-| 7 | 3 a 9, 10 a 19, 20 a 29, 30 a 39, 40 a 49, 50 a 59, 60 a 69, 70 a 79 | ResNet-152 e ResNet-152+ViT | SIM | MAE, MSE, RMSE | 60% treinamento, 20% validação, 20% teste | GELU/RELU | sim, mediante solicitação | regressão |
-| 8 | 8 a 9, 10 a 19, 20 a 29, 30 a 39, 40 a 49, 50 a 59, 60 a 68 | InceptionV3, DenseNet201, EfficientNetB4, MobileNetV2, VGG16, ResNet50V2 | SIM | MAE, RMSE, R² | 70% treinamento, 15% validação, 15% teste | RELU | não | regressão |
-| 9 | 6 a 20 | VGG16, ResNet101 | NÃO | Precisão, Recall, Acurácia, F1-Score | 70% treinamento, 20% teste, 10% validação | - | não | classificação |
-| 10 | 3 a 14 | SOS-Net (ResNet50, InceptionV3, ResNext50) | NÃO | Precisão, Sensibilidade, F1 Score, Acurácia (ACC), Área sob a Curva (AUC) | 70% treinamento, 10% validação, 20% teste | ReLu/ SoftMax | não | classificação |
-| 11 | 10 a 19, 20 a 29, 30 a 39, 40 a 49, 50 a 59, 60 a 69, 70 a 79 | Rede Neural Convolucional (CNN) personalizada | NÃO | Acurácia e matriz de confusão | 99,581% com tolerância de ±25 anos | - | não | classificação |
-| 12 | 12 a 21, 22 a 31, 32 a 41, 42 a 51, 52 a 61, 62 a 71 | ResNet, EfficientNet, VggNet, DenseNet | SIM | - | 80% treino, 10% validação, 10% teste | SoftMax | não | regressão |
-| 13 | 0 a 9, 10 a 19, 20 a 29, 30 a 39, 40 a 49, 50 a 59, 60+ | ResNet-152 | SIM | Acurácia, AUC (Área Sob a Curva), Matriz de Confusão | Validação cruzada K=5 | RELU | sim, mediante solicitação | classificação |
-| 14 | 3 a 11, 12 a 18, 19 a 25, 25+ | DENSEN (SSR-Net), Bayesian CNNs Net, DANet | NÃO | MAE | 86% validação, 14% teste | ReLU/ Tanh | não, site não acessível | regressão |
-| 15 | 0 a 9, 10 a 19, 20 a 29, 30 a 39, 40 a 49, 50 a 59, 60 a 69, 70+ | AlexNet, ResNet | SIM | Accuracy, Precision, Recall, F1-Score, Specificity | Validação cruzada k=10 | - | não | classificação |
-| 16 | 11 a 20 | ResNet18 | - | MAE, Accuracy, Error Rate, ME (Erro Médio) | Validação cruzada k=5 | - | não | regressão |
-| 17 | 5 a 24 | EfficientNet-B1, EfficientNet-B3, EfficientNet-B5, SE-ResNet101, Logistic Regression (Manual Method) | NÃO | Acurrácia, sensibilidade e especificidade | 80% treinamento, 10% validação, 10% teste | - | não | classificação |
 
 
 ## Referencias:
