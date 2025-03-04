@@ -1,36 +1,184 @@
 Redes Neurais Profundas para classificar imagens de radiografias odontológica panorâmica na perspectiva de grupos etários: Uma revisão sistemática da Literatura
 
 # Redes encontradas
-|---------------|3 a 14 anos   | 15 a 24 anos |> 25 anos     |	
-|---------------|--------|-----|--------|-----|--------|-----|
-|---------------|Acuracia|MaE  |Acuracia|MaE  |Acuracia|MaE  |
-EfficientNet-B3 |	     |     |95      |     |        |     |      
-AlexNet         |99,69   |     |98,95   |     |98,08   |     |	
-ResNet-101      |88,73   |     |        |     |        |     |	
-VGG16           |93,63   |     |	    |     |        |     |
-ResNet-50       |91,28   |     |91,28   |     |91,28   |     |	
-Sequential CNN  |93,39   |     |93,39   |     |93,39   |     |	
-DCNN            |96,63   |     |        |     |        |     |	
-ResNet-152      |89,05   |     |89,05   |     |89,05   |     |	
-VGG16           |        |10,46|        |10,46|        |10,46|
-VGG16           |        |4,51 |        |4,51 |        |4,51 |
-ResNet18        |        |2,95 |        |2,95 |        |2,95 |
-DenseNet201     |        |4,22 |        |4,22 |        |4,22 |
-InceptionV3     |        |3,44 |        |3,44 |        |3,44 |
-MobileNetV2     |        |3,68 |        |3,68 |        |3,68 |
-InceptionV4     |        |1,18 |        |3,78 |        |3,78 |
-BayesianCNNs Net|        |0,73 |        |1,72 |        |6,72 |
-DENSEN          |        |0,72 |        |1,35 |        |2,87 |
-DenseNet121     |        |3,15 |        |3,15 |        |3,15 |
-EfficientNet-B3 |        |3,87 |        |3,87 |        |3,87 |
-EfficientNet-B1 |        |4,59 |        |4,59 |        |4,59 |
-VGG19           |        |5,26 |        |5,26 |        |5,26 |
-ResNet101       |        |5,26 |        |5,26 |        |5,26 |
-ResNet50        |        |3,78 |        |3,78 |        |3,78 |
-ResNet50V2      |        |4,35 |        |4,35 |        |4,35 |
-EfficientNetB4  |        |3,47 |        |3,47 |        |3,47 |
-ResNet50 + ViT  |        |0,89 |        |2,73 |        |5,65 |
-DANet           |        |0,61 |        |2,02 |        |4,55 | 
+<table border="1">
+  <tr>
+    <th rowspan="2"></th>
+    <th colspan="2">3 a 14 anos</th>
+    <th colspan="2">15 a 24 anos</th>
+    <th colspan="2">> 25 anos</th>
+  </tr>
+  <tr>
+    <th>Acurácia</th>
+    <th>MaE</th>
+    <th>Acurácia</th>
+    <th>MaE</th>
+    <th>Acurácia</th>
+    <th>MaE</th>
+  </tr>
+  <tr>
+    <td>EfficientNet-B3</td>
+    <td></td><td></td>
+    <td>95</td><td></td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <td>AlexNet</td>
+    <td>99,69</td><td></td>
+    <td>98,95</td><td></td>
+    <td>98,08</td><td></td>
+  </tr>
+  <tr>
+    <td>ResNet-101</td>
+    <td>88,73</td><td></td>
+    <td></td><td></td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <td>VGG16</td>
+    <td>93,63</td><td></td>
+    <td></td><td></td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <td>ResNet-50</td>
+    <td>91,28</td><td></td>
+    <td>91,28</td><td></td>
+    <td>91,28</td><td></td>
+  </tr>
+  <tr>
+    <td>Sequential CNN</td>
+    <td>93,39</td><td></td>
+    <td>93,39</td><td></td>
+    <td>93,39</td><td></td>
+  </tr>
+  <tr>
+    <td>DCNN</td>
+    <td>96,63</td><td></td>
+    <td></td><td></td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <td>ResNet-152</td>
+    <td>89,05</td><td></td>
+    <td>89,05</td><td></td>
+    <td>89,05</td><td></td>
+  </tr>
+  <tr>
+    <td>VGG16</td>
+    <td></td><td>10,46</td>
+    <td></td><td>10,46</td>
+    <td></td><td>10,46</td>
+  </tr>
+  <tr>
+    <td>VGG16</td>
+    <td></td><td>4,51</td>
+    <td></td><td>4,51</td>
+    <td></td><td>4,51</td>
+  </tr>
+  <tr>
+    <td>ResNet18</td>
+    <td></td><td>2,95</td>
+    <td></td><td>2,95</td>
+    <td></td><td>2,95</td>
+  </tr>
+  <tr>
+    <td>DenseNet201</td>
+    <td></td><td>4,22</td>
+    <td></td><td>4,22</td>
+    <td></td><td>4,22</td>
+  </tr>
+  <tr>
+    <td>InceptionV3</td>
+    <td></td><td>3,44</td>
+    <td></td><td>3,44</td>
+    <td></td><td>3,44</td>
+  </tr>
+  <tr>
+    <td>MobileNetV2</td>
+    <td></td><td>3,68</td>
+    <td></td><td>3,68</td>
+    <td></td><td>3,68</td>
+  </tr>
+  <tr>
+    <td>InceptionV4</td>
+    <td></td><td>1,18</td>
+    <td></td><td>3,78</td>
+    <td></td><td>3,78</td>
+  </tr>
+  <tr>
+    <td>BayesianCNNs Net</td>
+    <td></td><td>0,73</td>
+    <td></td><td>1,72</td>
+    <td></td><td>6,72</td>
+  </tr>
+  <tr>
+    <td>DENSEN</td>
+    <td></td><td>0,72</td>
+    <td></td><td>1,35</td>
+    <td></td><td>2,87</td>
+  </tr>
+  <tr>
+    <td>DenseNet121</td>
+    <td></td><td>3,15</td>
+    <td></td><td>3,15</td>
+    <td></td><td>3,15</td>
+  </tr>
+  <tr>
+    <td>EfficientNet-B3</td>
+    <td></td><td>3,87</td>
+    <td></td><td>3,87</td>
+    <td></td><td>3,87</td>
+  </tr>
+  <tr>
+    <td>EfficientNet-B1</td>
+    <td></td><td>4,59</td>
+    <td></td><td>4,59</td>
+    <td></td><td>4,59</td>
+  </tr>
+  <tr>
+    <td>VGG19</td>
+    <td></td><td>5,26</td>
+    <td></td><td>5,26</td>
+    <td></td><td>5,26</td>
+  </tr>
+  <tr>
+    <td>ResNet101</td>
+    <td></td><td>5,26</td>
+    <td></td><td>5,26</td>
+    <td></td><td>5,26</td>
+  </tr>
+  <tr>
+    <td>ResNet50</td>
+    <td></td><td>3,78</td>
+    <td></td><td>3,78</td>
+    <td></td><td>3,78</td>
+  </tr>
+  <tr>
+    <td>ResNet50V2</td>
+    <td></td><td>4,35</td>
+    <td></td><td>4,35</td>
+    <td></td><td>4,35</td>
+  </tr>
+  <tr>
+    <td>EfficientNetB4</td>
+    <td></td><td>3,47</td>
+    <td></td><td>3,47</td>
+    <td></td><td>3,47</td>
+  </tr>
+  <tr>
+    <td>ResNet50 + ViT</td>
+    <td></td><td>0,89</td>
+    <td></td><td>2,73</td>
+    <td></td><td>5,65</td>
+  </tr>
+  <tr>
+    <td>DANet</td>
+    <td></td><td>0,61</td>
+    <td></td><td>2,02</td>
+    <td></td><td>4,55</td>
+  </tr>
+</table>
 
 
 # Planejamento
