@@ -1,4 +1,38 @@
 Redes Neurais Profundas para classificar imagens de radiografias odontológica panorâmica na perspectiva de grupos etários: Uma revisão sistemática da Literatura
+
+# Redes encontradas
+|---------------|3 a 14 anos   | 15 a 24 anos |> 25 anos     |	
+|---------------|--------|-----|--------|-----|--------|-----|
+|---------------|Acuracia|MaE  |Acuracia|MaE  |Acuracia|MaE  |
+EfficientNet-B3 |	     |     |95      |     |        |     |      
+AlexNet         |99,69   |     |98,95   |     |98,08   |     |	
+ResNet-101      |88,73   |     |        |     |        |     |	
+VGG16           |93,63   |     |	    |     |        |     |
+ResNet-50       |91,28   |     |91,28   |     |91,28   |     |	
+Sequential CNN  |93,39   |     |93,39   |     |93,39   |     |	
+DCNN            |96,63   |     |        |     |        |     |	
+ResNet-152      |89,05   |     |89,05   |     |89,05   |     |	
+VGG16           |        |10,46|        |10,46|        |10,46|
+VGG16           |        |4,51 |        |4,51 |        |4,51 |
+ResNet18        |        |2,95 |        |2,95 |        |2,95 |
+DenseNet201     |        |4,22 |        |4,22 |        |4,22 |
+InceptionV3     |        |3,44 |        |3,44 |        |3,44 |
+MobileNetV2     |        |3,68 |        |3,68 |        |3,68 |
+InceptionV4     |        |1,18 |        |3,78 |        |3,78 |
+BayesianCNNs Net|        |0,73 |        |1,72 |        |6,72 |
+DENSEN          |        |0,72 |        |1,35 |        |2,87 |
+DenseNet121     |        |3,15 |        |3,15 |        |3,15 |
+EfficientNet-B3 |        |3,87 |        |3,87 |        |3,87 |
+EfficientNet-B1 |        |4,59 |        |4,59 |        |4,59 |
+VGG19           |        |5,26 |        |5,26 |        |5,26 |
+ResNet101       |        |5,26 |        |5,26 |        |5,26 |
+ResNet50        |        |3,78 |        |3,78 |        |3,78 |
+ResNet50V2      |        |4,35 |        |4,35 |        |4,35 |
+EfficientNetB4  |        |3,47 |        |3,47 |        |3,47 |
+ResNet50 + ViT  |        |0,89 |        |2,73 |        |5,65 |
+DANet           |        |0,61 |        |2,02 |        |4,55 | 
+
+
 # Planejamento
 
 | Base de dados   | String de busca |
